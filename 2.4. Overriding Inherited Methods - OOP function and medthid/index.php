@@ -20,12 +20,18 @@ class Man {
  
 }
 class inharit extends Man{
+    public $address;
+    public function __construct($fname,$age,$address){
+        $this->address = $address;
+        $this->name = $fname; 
+        $this->age = $age;
+    }
     public function message(){
-        return $this->info();
+        return $this->name.' '.$this->age.''.$this->address;
     }
 }
 
-$myself = new inharit('Ibrahim', 23);
+$myself = new inharit('Ibrahim', '23','Khan');
 echo "<br>";
 echo $myself->message();
 echo $myself->funMobile(89);
