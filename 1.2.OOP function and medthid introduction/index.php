@@ -15,4 +15,7 @@ class lastName{
 //$ibrahim = new main();
 $l = new lastName();
 
-echo $l->info('Khan','24','Dhanmondi'); // Output the value
+
+echo $l->info('Khan','24','Dhanmondi');
+echo "<br>";
+echo $l->info('Ibrahim','24','Dhanmondi');
